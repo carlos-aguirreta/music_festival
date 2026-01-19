@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RO's Festival</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body id = "inicio">
+    <header class="header">
+        <div class="contenedor contenido-header">
+            <a href="#inicio"><h1>RO's Festival</h1></a>
+
+            <nav class="navegacion-principal">
+                <a href="#lineup">Line Up</a>
+                <a href="#galeria">Galeria</a>
+                <a href="#boletos">Boletos</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <div class="video">
+        <div class="overlay">
+            <div class="contenedor contenido-video">
+                <h2>
+                    RO's Festival
+                </h2>
+                <p>Marzo 2024 Hermosillo, Mexico</p>
+            </div>
+        </div>
+        <video autoplay muted loop>
+            <source src="video/concierto.mp4" type="video/mp4">
+            <source src="video/concierto.ogg" type="video/ogg">
+            <source src="video/concierto.webm" type="video/webm">
+        </video>
+    </div>
+
+    <section class="contenedor sobre-festival">
+        <div class="imagen">
+            <picture>
+                <source srcset="build/img/imagen_vocalista_2.avif" type="image/avif">
+                <source srcset="build/img/imagen_vocalista_2.webp" type="image/webp">
+                <img loading="lazy" src="src/img/imagen_vocalista_2.jpg" alt="Imagen Artista">
+            </picture>
+        </div>
+        <div class="contenido-festival">
+            <h2>RO's Festival</h2>
+            <p class="fecha">Marzo 2024 Hermosillo, Mexico</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Molestias aut libero minima esse numquam, 
+                provident cumque sunt rerum praesentium amet nobis deserunt, 
+                nam ab eius quidem consequatur. 
+                Perspiciatis, quia? Numquam!</p>
+
+        </div>
+    </section>
+
+    <section id="lineup" class="lineup">
+        <h3>Line Up</h3>
+
+        <p class="dia">Viernes 26</p>
+
+        <div class="escenarios-contenedor contenedor">
+            <div class="escenario rock bg-amarillo">
+                <p class="nombre-escenario">Escenario RO</p>
+
+                <ul class="calendario">
+                    <li>
+                        18:00 | <span>Bruno Mars</span>
+                    </li>
+                    <li>
+                        19:00 | <span>Alicia Keys</span>
+                    </li>
+                    <li>
+                        20:00 | <span>Ed Sheeran</span>
+                    </li>
+                    <li>
+                        21:00 | <span>Billie Elish</span>
+                    </li>
+                    <li>
+                        22:00 | <span>Adele</span>
+                    </li>
+                </ul>
+            </div> <!--.escenario-->
+            <div class="escenario Xio bg-verde">
+                <p class="nombre-escenario">Escenario Xio</p>
+
+                <ul class="calendario">
+                    <li>
+                        18:30 | <span>Wisin y Yandel</span>
+                    </li>
+                    <li>
+                        19:30 | <span>J Balvin</span>
+                    </li>
+                    <li>
+                        20:30 | <span>Maluma</span>
+                    </li>
+                    <li>
+                        21:30 | <span>Carol G</span>
+                    </li>
+                    <li>
+                        22:30 | <span>Bad Bunny</span>
+                    </li>
+                </ul>
+            </div> <!--.escenario-->
+        </div> <!--.escenario-contenedor-->
+
+        <p class="dia">Sabado 27</p>
+
+        <div class="escenarios-contenedor contenedor">
+            <div class="escenario rock bg-verde">
+                <p class="nombre-escenario">Escenario RO</p>
+
+                <ul class="calendario">
+                    <li>
+                        18:00 | <span>Kanny Garcia</span>
+                    </li>
+                    <li>
+                        19:00 | <span>Carlos Rivera</span>
+                    </li>
+                    <li>
+                        20:00 | <span>Ha-Ash</span>
+                    </li>
+                    <li>
+                        21:00 | <span>Pablo Alborán</span>
+                    </li>
+                    <li>
+                        22:00 | <span>RBD</span>
+                    </li>
+                </ul>
+            </div> <!--.escenario-->
+            <div class="escenario Xio bg-amarillo">
+                <p class="nombre-escenario">Escenario Xio</p>
+
+                <ul class="calendario">
+                    <li>
+                        18:30 | <span>Banda MS</span>
+                    </li>
+                    <li>
+                        19:30 | <span>Yuridia</span>
+                    </li>
+                    <li>
+                        20:30 | <span>Grupo Frontera</span>
+                    </li>
+                    <li>
+                        21:30 | <span>Christian Nodal</span>
+                    </li>
+                    <li>
+                        22:30 | <span>Carín León</span>
+                    </li>
+                </ul>
+            </div> <!--.escenario-->
+        </div> <!--.escenario-contenedor-->
+    </section>
+
+    <section id="galeria" class="galeria contenedor">
+        <h3>Galeria</h3>
+        <ul class="galeria-imagenes"></ul>
+    </section>
+
+    <section id="boletos" class="boletos bg-verde">
+        <h3>Boletos</h3>
+
+        <div class="contenedor contenedor-boletos">
+            <div class="basico pase">
+                <p class="nombre-pase">Pase 1 Dia</p>
+                <header class="pase-header">
+                    <p>Incluye</p>
+                </header>
+                <div class="pase-body">
+                    <ul>
+                        <li>Acceso a ambos escenarios</li>
+                        <li> Comida y Bebidas</li>
+                    </ul>
+                </div>
+                <footer class="pase-footer">
+                    <p>$6,000</p>
+                </footer>
+            </div>
+
+            <div class="basico pase">
+                <p class="nombre-pase">Pase 2 Dias</p>
+                <header class="pase-header">
+                    <p>Incluye</p>
+                </header>
+                <div class="pase-body">
+                    <ul>
+                        <li>Acceso a ambos escenarios</li>
+                        <li>Comida y Bebidas</li>
+                        <li>Camisa del Evento</li>
+                        <li>Acceso VIP</li>
+                    </ul>
+                </div>
+                <footer class="pase-footer">
+                    <p>$10,499</p>
+                </footer>
+                
+            </div>
+        </div>
+
+    </section>
+    <footer class="site-footer">
+        <p>RO's Festival. Todos los derechos reservados</p>
+
+    </footer>
+
+    <script src="build/js/app.js"></script>
+</body>
+</html>
